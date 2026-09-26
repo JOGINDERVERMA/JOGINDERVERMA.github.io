@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         blogContainer.innerHTML = `
             <div style="text-align:center; padding: 100px 0;">
                 <h2>Blog post not found.</h2>
-                <a href="blog.html" class="btn outline-btn mt-4">Return to Blog</a>
+                <a href="/blog" class="btn outline-btn mt-4">Return to Blog</a>
             </div>
         `;
     }

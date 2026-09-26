@@ -15,7 +15,7 @@ if(blogGrid && typeof blogPosts !== 'undefined') {
             <div class="blog-content">
                 <h2 class="blog-title">${post.title}</h2>
                 <p class="blog-excerpt">${post.excerpt}</p>
-                <a href="single-blog.html?id=${index}" class="blog-read-more">Read Article →</a>
+                <a href="/post?id=${index}" class="blog-read-more">Read Article →</a>
             </div>
         `;
         blogGrid.appendChild(article);
