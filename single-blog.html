@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Blog | Joginder Verma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .single-blog-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .single-blog-category {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .single-blog-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+        .single-blog-image {
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 4rem;
+        }
+        .single-blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+        }
+        .single-blog-content h3 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        .single-blog-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+        .single-blog-content ul {
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+        }
+        .single-blog-content li {
+            margin-bottom: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="header">
+        <div class="logo">
+            <img src="img/main.jpg" alt="Joginder Verma" class="nav-profile-img">
+            <span>Joginder Verma.</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#philosophy" class="nav-link">Philosophy</a>
+            <a href="index.html#experience" class="nav-link">Experience</a>
+            <a href="index.html#education" class="nav-link">Education</a>
+            <a href="index.html#skills" class="nav-link">Skills</a>
+            <a href="index.html#pricing" class="nav-link">Pricing</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+        </nav>
+                <div class="menu-btn">
+            <span class="menu-text" style="font-weight:500; font-size:0.9rem; text-transform:uppercase;">Menu</span>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+<!-- Mobile Overlay Menu -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-nav-links">
+            <a href="index.html#about" class="mobile-link">01. About</a>
+            <a href="index.html#philosophy" class="mobile-link">02. Philosophy</a>
+            <a href="index.html#experience" class="mobile-link">03. Experience</a>
+            <a href="index.html#education" class="mobile-link">04. Education</a>
+            <a href="index.html#skills" class="mobile-link">05. Skills</a>
+            <a href="index.html#pricing" class="mobile-link">06. Pricing</a>
+            <a href="blog.html" class="mobile-link">07. Blog</a>
+            <a href="index.html#contact" class="mobile-link">08. Contact</a>
+        </div>
+        <div class="mobile-socials">
+            <a href="https://twitter.com/PRINCEVERMA143_" target="_blank" style="color:var(--text-primary); text-decoration:none; font-weight:500;">Twitter</a>
+            <a href="https://github.com/JOGINDERVERMA" target="_blank" style="color:var(--text-primary); text-decoration:none; font-weight:500;">GitHub</a>
+            <a href="https://www.linkedin.com/in/joginderdevwork/" target="_blank" style="color:var(--text-primary); text-decoration:none; font-weight:500;">LinkedIn</a>
+        </div>
+    </div>
+
+    <main style="padding-top: 150px; min-height: 100vh;">
+        <div class="container fade-in-up">
+            <a href="blog.html" style="text-decoration:none; color:var(--text-secondary); margin-bottom:2rem; display:inline-block; font-weight:500;">← Back to all posts</a>
+            
+            <div id="blog-container">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" style="margin-top: 100px;">
+        <div class="container footer-container">
+            <p>&copy; <span id="year"></span> Joginder Verma. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://twitter.com/PRINCEVERMA143_" target="_blank" class="social-icon">Twitter</a>
+                <a href="https://github.com/JOGINDERVERMA" target="_blank" class="social-icon">GitHub</a>
+                <a href="https://www.linkedin.com/in/joginderdevwork/" target="_blank" class="social-icon">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/single-blog.js"></script>
+</body>
+</html>
