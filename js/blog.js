@@ -24,3 +24,14 @@ if(blogGrid) {
         blogGrid.appendChild(article);
     });
 }
+
+// Ensure the newly added blog cards are observed by the intersection observer
+setTimeout(() => {
+    if (typeof observer !== 'undefined') {
+        const dynamicCards = document.querySelectorAll('.blog-card.fade-in-up');
+        dynamicCards.forEach(card => observer.observe(card));
+    } else {
+        // Fallback if observer fails to load
+        document.querySelectorAll('.blog-card.fade-in-up').forEach(card => card.classList.add('visible'));
+    }
+}, 100);
