@@ -1112,3 +1112,17 @@ a {
 .blog-read-more:hover {
     transform: translateX(5px);
 }
+
+/* Single Blog Content specific styles */
+.lead-paragraph {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin-bottom: 2.5rem;
+}
+
+.single-blog-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
